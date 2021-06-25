@@ -6,7 +6,7 @@ wget http://www2.mmm.ucar.edu/wrf/src/wps_files/geog_high_res_mandatory.tar.gz .
 gunzip geog_high_res_mandatory.tar.gz
 tar -xf geog_high_res_mandatory.tar
 ```    
-The directory infomation is given to the geogrid program in the namelist.wps (/LUSTRE/igarcia/models/WRF_4.1.3/WPS) file in the &geogrid section:
+The directory infomation is given to the geogrid program in the [namelist.wps](namelist.wps) (/LUSTRE/igarcia/models/WRF_4.1.3/WPS) file in the &geogrid section:
 ```
 geog_data_path = '/LUSTRE/igarcia/models/WRF_4.1.3/Build_WRF/WPS_GEOG'
 ```
@@ -28,14 +28,14 @@ Link-in the grib data
 ./link_grib.csh /LUSTRE/igarcia/data/GFS_test/matthew/fnl
 ```
 
-Edit namelist.wps (ungrib section)
+Edit [namelist.wps](namelist.wps) (ungrib section)
 ```
 vi namelist.wps
 ```
 
-Run ungrib to create the intermediate files:
+Run ungrib to create the intermediate files (FILE:YYYY-MM-DD_HH):
 ```
-./ungrib.exe # --> Will create FILE:YYYY-MM-DD_HH files
+./ungrib.exe
 ```
 
 To check data info:
@@ -44,7 +44,7 @@ To check data info:
 ```
 
 ## geogrid
-Edit namelist.wps (geogrid section)
+Edit [namelist.wps](namelist.wps) (geogrid section)
 ```
 vi namelist.wps
 ```
@@ -62,7 +62,7 @@ Run geogrid.exe
 ```
 
 ##  metgrid
-Edit namelist.wps (metgrid section)
+Edit [namelist.wps](namelist.wps) (metgrid section)
 ```
 vi namelist.wps
 ```
