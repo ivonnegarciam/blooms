@@ -69,5 +69,6 @@ vi namelist.wps
 
 Run metgrid.exe
 ```
-./metgrid.exe # should create files met_em.d01.YYYY-MM-DD_00:00:00.nc (one per input file)
+./metgrid.exe 
 ```
+should create files met_em.d01.YYYY-MM-DD_00:00:00.nc (one per input file)
