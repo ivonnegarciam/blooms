@@ -10,12 +10,12 @@ Link in the met_em files created with metgrid.exe
 ln -sf ../../../WPS/met_em.d01.2016-10* .    
 ```
 
-Edit namelist.input
+Edit [namelist.input](namelist.input)
 ```
 vi namelist.input
 ```
 
-Create .pbs file to submit real job to queue (/LUSTRE/igarcia/models/WRF_4.1.3/WRF/test/em_real)
+Create [run_real.pbs](run_real.pbs) file to submit real job to queue (done from /LUSTRE/igarcia/models/WRF_4.1.3/WRF/test/em_real)
 ```
 vi run_real.pbs
 ```
@@ -28,7 +28,7 @@ should create wrfinput_d01 and wrfbdy_d01 files. It also creates rsl.out 00xx an
 
 
 # WRF
-Create .pbs file to submit wrf job to queue (/LUSTRE/igarcia/models/WRF_4.1.3/WRF/test/em_real)
+Create [run_wrf.pbs](run_wrf.pbs) file to submit wrf job to queue (done from /LUSTRE/igarcia/models/WRF_4.1.3/WRF/test/em_real)
 ```
 vi run_wrf.pbs
 ```
