@@ -1,0 +1,29 @@
+#!/bin/bash
+#PBS -N wrf_t1
+#PBS -l nodes=2:ppn=20
+#PBS -q default
+#PBS -o wrf.log
+#PBS -e wrf.err
+
+# cd where this script is saved
+cd /LUSTRE/igarcia/models/WRF_4.1.3/WRF/test/em_real
+WPS_DIR=/LUSTRE/igarcia/models/WRF_4.1.3/WPS
+WRF_DIR=/LUSTRE/igarcia/models/WRF_4.1.3/WRF/test/em_real
+
+module load intel/MPI2017
+
+export JASPERLIB=/LUSTRE/igarcia/models/WRF_4.1.3/Build_WRF/LIBRARIES/grib2/lib
+export JASPERINC=/LUSTRE/igarcia/models/WRF_4.1.3/Build_WRF/LIBRARIES/grib2/include
+export NETCDF=/share/apps/netcdf4.2-paralelo
+export NETCDF_LIB_DIR=/share/apps/netcdf4.2-paralelo/lib
+export NETCDF_INC_DIR=/share/apps/netcdf4.2-paralelo/include
+export HDF5=/share/apps/hdf5-paralelo
+export HDF5_LIB_DIR=/share/apps/hdf5-paralelo/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${HDF5_LIB_DIR}:${NETCDF_LIB_DIR}
+export PATH=$PATH:${WPS_DIR}:${WRF_DIR}
+
+cd $PBS_O_WORKDIR
+sort -u $PBS_NODEFILE > nodessw.file
+mpirun -hostfile nodessw.file -ppn $PBS_NUM_PPN -n $PBS_NP ./wrf.exe &> log.wrf
+
+exit 0 
