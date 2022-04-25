@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -N met
+#PBS -l nodes=5:ppn=24
+#PBS -q memALTA 
+#PBS -o metgrid.log
+#PBS -e metgrid.err
+
+# cd where this script is saved
+cd /LUSTRE/igarcia/models/WRF_4.1.3_withoutXIOS/WPS
+#WPS_DIR=/LUSTRE/igarcia/models/WRF_4.1.3_withoutXIOS/WPS
+#WRF_DIR=/LUSTRE/igarcia/models/WRF_4.1.3_withoutXIOS/WRF/test/em_real
+
+module load spack
+module load netcdf-c-4.7.0-intel-18.0.1-vtkbioo
+module load intel/MPI2018
+module load netcdf-fortran-4.4.4-intel-18.0.1-zhe2pvi
+module load jasper-1.900.1-intel-18.0.1-3sxqjot
+
+#cd $PBS_O_WORKDIR
+sort -u $PBS_NODEFILE > nodessw.file
+mpirun -hostfile nodessw.file -ppn $PBS_NUM_PPN -n $PBS_NP ./metgrid.exe &> log.metgrid
+
+exit 0 
