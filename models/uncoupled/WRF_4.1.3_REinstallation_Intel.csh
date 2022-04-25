@@ -1,16 +1,5 @@
-Installation of WRF & WPS on chaman again (marzo-abril 2022)
-# copies of the configure files used in
-# /home/ivonne/Documents/Postdocs/CICESE_2021/notas/manuales/WRF_WPS_REinstallation_chaman
-    configure.wrf 
-    configure.wps
-    namelist.wps
-    namelist.input
-    run_geogrid.pbs
-    run_metgrid.pbs
-    run_real.pbs
-    run_wrf.pbs
-    tweak_output_d01.txt
- 
+Installation of WRF & WPS on chaman again (march-april 2022)
+--> Here are all instructions to run WRF into 1 single file
 
 #--- 0) cp & extract WRF & WPS tar files here
 cd /LUSTRE/igarcia/models/WRF_4.1.3_withoutXIOS/WRF
