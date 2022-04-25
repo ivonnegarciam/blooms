@@ -9,4 +9,10 @@ This repo includes some notes and instructions on how to set up, run and trouble
 3. [Pre-processing](https://github.com/ivonnegarciam/blooms/blob/main/models/uncoupled/pre-processing.md)
 4. [Run](https://github.com/ivonnegarciam/blooms/blob/main/models/uncoupled/run.md)
 
+## NEMO
+Coming soon
+
+## OASIS
+Coming soon
+
 Hope this helps to another lost soul!
