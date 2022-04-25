@@ -9,7 +9,34 @@ tar xfv WPS-4.1.tar.gz
 
 Note: following steps from both [UCAR](https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compilation_tutorial.php) and [Pratiman](https://pratiman-91.github.io/2020/09/01/Installing-WRF-from-scratch-in-an-HPC-using-Intel-Compilers.html)
 
-## Download and install missing libraries on chaman
+## Load modules 
+```
+module load spack
+module load netcdf-c-4.7.0-intel-18.0.1-vtkbioo
+module load intel/MPI2018
+module load netcdf-fortran-4.4.4-intel-18.0.1-zhe2pvi
+module load jasper-1.900.1-intel-18.0.1-3sxqjot
+```
+
+## Configure
+ ```
+ ./configure
+ ```
+ Select option 17  Linux x86_64, Intel compiler    (serial) 
+ *Important*: it is recommended to compile WPS in serial mode, regardless of whether you compiled WRF in parallel.
+ 
+ ## Compile
+ ```
+./compile >& log.compile    
+```
+Check that 3 executables are created (geogrid, ungrib, metgrid)
+```
+ls -l main/*.exe
+``` 
+
+
+
+## Otherwise, if neccesary, download and install missing libraries on chaman
 ```
 export DIR=/LUSTRE/igarcia/models/WRF_4.1.3/Build_WRF/LIBRARIES   
 ```
@@ -53,19 +80,3 @@ export JASPERINC=/LUSTRE/igarcia/models/WRF_4.1.3/Build_WRF/LIBRARIES/grib2/incl
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${JASPERLIB} 
 ```
   
- ## Configure
- ```
- ./configure
- ```
- Select option 17  Linux x86_64, Intel compiler    (serial) 
- *Important*: it is recommended to compile WPS in serial mode, regardless of whether you compiled WRF in parallel!
- 
- ## Compile
- ```
-./compile >& log.compile    
-```
-Check that 3 executables are created (geogrid, ungrib, metgrid)
-```
-ls -ls main/*.exe
-``` 
-
