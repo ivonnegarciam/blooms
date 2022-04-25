@@ -1,5 +1,5 @@
 # Installing, configuring and compiling WPS on chaman
-## Download source code to /LUSTRE/igarcia/models/WRF_4.1.3
+## Download source code to /LUSTRE/igarcia/models/WRF_4.1.3_withoutXIOS
 For uncoupled version get: [WPS 4.1](https://github.com/wrf-model/WPS/archive/v4.1.tar.gz)
 ```
 wget https://github.com/wrf-model/WPS/archive/v4.1.tar.gz 
