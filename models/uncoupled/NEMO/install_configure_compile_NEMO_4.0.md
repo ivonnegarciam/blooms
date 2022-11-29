@@ -7,7 +7,7 @@ For this project, we will be using NEMO v4.0, which is already installed on cham
 If a different version is required, download directly from:
 [https://forge.nemo-ocean.eu/nemo/nemo/-/releases/](https://forge.nemo-ocean.eu/nemo/nemo/-/releases/)
 
-## Hands on
+## Previous steps to model compilation
 
 ### Load modules
 ```
@@ -40,14 +40,14 @@ Before compiling NEMO, we need to compile some (pre/post)processing tools (for g
 ./maketools -n WEIGHTS -m X64_CHAMAN2018 -j4
 ```
 
-### Duplicate configuration and compile
+## Duplicate configuration
 Modify the architecture file if necessary (./arch/). It contains the paths to the compiler, the libraries MPI, netcdf & dependencies:
 ```
 cd ./arch
 vi arch-X64_CHAMAN2018.fcm  (uses intel2018 & dependencies from spack)
 ```
 
-### Copy the cfgs to be used, for instance:
+Copy the cfgs to be used, for instance:
 ```
 cp -r /LUSTRE/fandrade/MODELOS/NEMO4/cfgs/GOLFO36-R01 /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs
 ```
@@ -56,17 +56,19 @@ check that all namelists and other files are copied (except the nemo exe, they a
 rsync -rv --exclude=nemo /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-R01/EXP00/* /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-R02/EXP00/
 ```
 
-### Modify namelist, if necessary (I think this should be done here/now):
+Modify namelist, if necessary (I think this should be done here/now):
 ```
 cd /EXP00/
 vi namelist_cfg
 ```
 
-### Add the configuration name to the list in work_cfgs.txt
+Add the configuration name to the list in work_cfgs.txt
+```
 vi /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/work_cfgs.txt
+```
 
 
-### Compile 
+## Compile 
 Currently, it takes about 3 min
 ```
 ./makenemo -r GOLFO36-R01 -n GOLFO36-R02 -m X64_CHAMAN2018 -j4 
