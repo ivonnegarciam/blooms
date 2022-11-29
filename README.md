@@ -11,9 +11,17 @@ This repo includes some notes and instructions on how to set up, run and trouble
 4. [Run](https://github.com/ivonnegarciam/blooms/blob/main/models/uncoupled/run.md)
 
 ### NEMO
-Coming soon
+1. NEMO install & compile
+2. Run
 
 ### OASIS
-Coming soon
+1. OASIS Install & compile
+
+## Coupled models (NOW: NEMO-OASIS-WRF)
+### XIOS with OASIS
+
+### NEMO with OASIS & XIOS
+
+### WRF with OASIS & XIOS
 
 Hope this helps to another lost soul!
