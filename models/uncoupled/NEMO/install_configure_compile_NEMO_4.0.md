@@ -51,9 +51,9 @@ Copy the cfgs to be used, for instance:
 ```
 cp -r /LUSTRE/fandrade/MODELOS/NEMO4/cfgs/GOLFO36-R01 /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs
 ```
-check that all namelists and other files are copied (except the nemo exe, they are ~14). Regularly they are not, if so copy them manually:
+Check that all namelists and other files are copied (except the nemo exe, they are ~14). Regularly they are not, if so copy them manually:
 ```
-rsync -rv --exclude=nemo /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-R01/EXP00/* /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-R02/EXP00/
+rsync -rv --exclude=nemo /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-R01/EXP00/* /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-E02/EXP00/
 ```
 
 Modify namelist, if necessary (I think this should be done here/now):
@@ -71,14 +71,14 @@ vi /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/work_cfgs.txt
 ## Compile 
 Currently, it takes about 3 min
 ```
-./makenemo -r GOLFO36-R01 -n GOLFO36-R02 -m X64_CHAMAN2018 -j4 
+./makenemo -r GOLFO36-R01 -n GOLFO36-E02 -m X64_CHAMAN2018 -j4 
 ```
 
 If successful, the compilation creates a new folder (named as the config case) with the binary nemo.exe: 
 ```
-/LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-R02/BLD/bin/nemo.exe   
+/LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-E02/BLD/bin/nemo.exe   
 ```
-At the end of the configuration compilation, GOLFO36-R02 directory will have the following structure:
+At the end of the configuration compilation, GOLFO36-E02 directory will have the following structure:
 ```
 BLD    --> BuiLD folder: target executable, headers, libs, preprocessed routines, …
 EXP00  --> Run folder: link to executable, namelists, *.xml and IOs
