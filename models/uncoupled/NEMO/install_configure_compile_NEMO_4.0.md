@@ -2,14 +2,10 @@
 
 ## Get source code
 ### a) From within chaman
-For this project, we will be using NEMO v4.0, which is already installed on chaman so we just need to cp the source files to the current working directory
-from /LUSTRE/jouanno/INTERCAMBIO/Nemo_4.0_release/ (version that includes the cfg GOLFO108-NAS00).
-We will have to modify the arch & other files
+For this project, we will be using NEMO v4.0, which is already installed on chaman so we just need to cp the source files to the current working directory. We will have to modify the arch & other files.
 ### b) Direct download 
 If a different version is required, download directly from:
-```
 [https://forge.nemo-ocean.eu/nemo/nemo/-/releases/](https://forge.nemo-ocean.eu/nemo/nemo/-/releases/)
-```
 
 ## Hands on
 
@@ -51,7 +47,7 @@ cd ./arch
 vi arch-X64_CHAMAN2018.fcm  (uses intel2018 & dependencies from spack)
 ```
 
-### Copy the cfgs to be used, eg:
+### Copy the cfgs to be used, for instance:
 ```
 cp -r /LUSTRE/fandrade/MODELOS/NEMO4/cfgs/GOLFO36-R01 /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs
 ```
@@ -66,7 +62,7 @@ cd /EXP00/
 vi namelist_cfg
 ```
 
-### Add the cfgs name to the list in work_cfgs.txt
+### Add the configuration name to the list in work_cfgs.txt
 vi /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/work_cfgs.txt
 
 
@@ -78,7 +74,7 @@ Currently, it takes about 3 min
 
 If successful, the compilation creates a new folder (named as the config case) with the binary nemo.exe: 
 ```
-/LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO108-PHY00/BLD/bin/nemo.exe   
+/LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-R02/BLD/bin/nemo.exe   
 ```
 At the end of the configuration compilation, GOLFO36-R02 directory will have the following structure:
 ```
