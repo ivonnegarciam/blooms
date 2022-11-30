@@ -1,11 +1,12 @@
 Create a new experiment from a previos one. Say, for instance, that we want to run another simulation using the same configuration but with different dates.
 
-## Copy EXP00 to EXP01:
+### Copy EXP00 to EXP01:
 ```
  cd /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-E02/
  ```
 
-## 0) Make sure that all input files (corresponding to the sim period) are ready to be read by NEMO, that includes:    
+### 0) Check input files
+Make sure that all input files (corresponding to the simulation period) are ready to be read by NEMO, that includes:    
 ```
     - initial conditions (it seems this includes these and other similar OPA files):
         F_DTA_DIR=/LUSTRE/igarcia/stock/NEMO_4.0/GOLFO36-I      
@@ -48,12 +49,12 @@ Create a new experiment from a previos one. Say, for instance, that we want to r
             #GOLFO36_rodepth.nc # I don't have it but it seems to run ok without it.
 ```            
     
-## 1) Cp the whole EXP00 folder
+### 1) cp the whole EXP00 folder
 ```
 cp -r ./EXP00 ./EXP01
 ```
     
-## 2) Modify date (& other desired change) in namelist in /EXP01/:
+### 2) Modify date (& other desired changes) in namelist in /EXP01/:
 ```
 cd EXP01
 vi namelist_cfg 
@@ -61,14 +62,14 @@ vi namelist_cfg
 --> nndate0 =  20161001 (l27)
 --> rn_vfac = 0. # 0 for abs wind, 1 for rel wind, 0.5 for half the rel wind. (l118)
         
-## 3) Modify run_nemo.ksh
+### 3) Modify run_nemo.ksh
  ```
  vi run_nemo.ksh 
  ```
  --> replace EXP00 with EXP01 in P_CTL_DIR = /LUSTRE...  
  --> PBS -l nodes=10:ppn=28   # This number should match the one in the includefile.ksh
     
-## 4) Modify includefile.ksh    
+### 4) Modify includefile.ksh    
 ```
 vi includefile.ksh
 ```
@@ -76,13 +77,13 @@ vi includefile.ksh
 --> mv 3 filenames from old to new date (eg: 2006m01d01 --> 2016m10d01)
 --> NOCEAN=270, NXIOS=10 # l 42&43 has to match the num of nodes in run_nemo.ksh
         
-## 5) Modify save_nemo.ksh
+### 5) Modify save_nemo.ksh
 ```
 vi save_nemo.ksh
 ```
 --> replace EXP00 with EXP01 in P_CTL_DIR = /LUSTRE...  (l09)
         
-## 6) mkdir R & S (Restart & Salidas) dirs. 
+### 6) mkdir R & S (Restart & Salidas) dirs. 
 As of now, I have to rename the previos folder with the same cfg name to include the EXP00 bit. *This should no loger be necessary when the folder name includes the EXP number.
 ```
 mv /LUSTRE/igarcia/outputs/NEMO_4.0_uncoupled/GOLFO36-E03-R /LUSTRE/igarcia/outputs/NEMO_4.0_uncoupled/GOLFO36-E03-R-EXP01
@@ -90,20 +91,22 @@ mv /LUSTRE/igarcia/outputs/NEMO_4.0_uncoupled/GOLFO36-E03-S /LUSTRE/igarcia/outp
 mkdir /LUSTRE/igarcia/outputs/NEMO_4.0_uncoupled/GOLFO36-E02-R # EXP01-R 
 mkdir /LUSTRE/igarcia/outputs/NEMO_4.0_uncoupled/GOLFO36-E02-S # EXP01-S
 ```
-Note 1: I haven't yet manage to succesfully include the "EXP01" part in the folder name (it also has to be changed in other files, but it seems worth trying as I'll probaby be running various simulations from the same config file)
+Note 1: I haven't yet manage to succesfully include the "EXP01" part in the folder name (it also has to be changed in other files, but it seems worth trying as I'll probaby be running various simulations from the same config file).
+
 Note 2: Restart files are not moved to the /LUSTRE/igarcia/outputs/NEMO_4.0_uncoupled/$config_name-R folder. Check why.
+
 ```
 mv /LUSTRE/igarcia/tmp/GOLFO36-E03_1 /LUSTRE/igarcia/tmp/GOLFO36-E03_1_EXP01
 mv /LUSTRE/igarcia/tmp/GOLFO36-E03_2 /LUSTRE/igarcia/tmp/GOLFO36-E03_2_EXP01
 ```
 
-## 7) Check the GOLFO36-E01.db
-For 1mon-cold start sim it should only contain 3 columns (1 1 17856):
+### 7) Check the GOLFO36-E01.db
+For 1mon-cold start sim it should only contain 3 columns (1 1 17856) --> (number of months running, first timestep, number of timesteps to complete the first month):
 ```
 more GOLFO36-E01.db 
 ```
 
-## 8) Run NEMO
+### 8) Run NEMO
 ```
 qsub run_nemo.ksh  
 ```
