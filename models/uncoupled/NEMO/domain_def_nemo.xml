@@ -1,0 +1,272 @@
+
+   <domain_definition>
+
+     <!--   T grid   -->
+     <domain id="grid_T" long_name="grid T"/>
+     
+     <!--   My zoom: example of hand defined zoom   -->
+     <domain id="myzoomT" domain_ref="grid_T" >
+       <zoom_domain ibegin="1" jbegin="1" ni="2" nj="3"/>
+     </domain>
+
+     <domain id="1point" domain_ref="grid_T" >
+       <zoom_domain ibegin="1" jbegin="1" ni="1" nj="1"/>
+     </domain>
+     <!--   Eq section -->
+     <domain id="EqT" domain_ref="grid_T" > <zoom_domain id="EqT"/> </domain>
+     <!--   TAO : see example above   -->
+     <!--   137e   -->
+     <domain id="2n137eT" domain_ref="grid_T" > <zoom_domain id="2n137eT"/> </domain>
+     <domain id="5n137eT" domain_ref="grid_T" > <zoom_domain id="5n137eT"/> </domain>
+     <domain id="8n137eT" domain_ref="grid_T" > <zoom_domain id="8n137eT"/> </domain>
+     <!-- <\!--   147e   -\-> -->
+     <domain id="0n147eT" domain_ref="grid_T" > <zoom_domain id="0n147eT"/> </domain>
+     <domain id="2n147eT" domain_ref="grid_T" > <zoom_domain id="2n147eT"/> </domain>
+     <domain id="5n147eT" domain_ref="grid_T" > <zoom_domain id="5n147eT"/> </domain>
+     <!-- <\!--   156e   -\-> -->
+     <domain id="5s156eT" domain_ref="grid_T" > <zoom_domain id="5s156eT"/> </domain>
+     <domain id="2s156eT" domain_ref="grid_T" > <zoom_domain id="2s156eT"/> </domain>
+     <domain id="0n156eT" domain_ref="grid_T" > <zoom_domain id="0n156eT"/> </domain>
+     <domain id="2n156eT" domain_ref="grid_T" > <zoom_domain id="2n156eT"/> </domain>
+     <domain id="5n156eT" domain_ref="grid_T" > <zoom_domain id="5n156eT"/> </domain>
+     <domain id="8n156eT" domain_ref="grid_T" > <zoom_domain id="8n156eT"/> </domain>
+     <!-- <\!--   165e   -\-> -->
+     <domain id="8s165eT" domain_ref="grid_T" > <zoom_domain id="8s165eT"/> </domain>
+     <domain id="5s165eT" domain_ref="grid_T" > <zoom_domain id="5s165eT"/> </domain>
+     <domain id="2s165eT" domain_ref="grid_T" > <zoom_domain id="2s165eT"/> </domain>
+     <domain id="0n165eT" domain_ref="grid_T" > <zoom_domain id="0n165eT"/> </domain>
+     <domain id="2n165eT" domain_ref="grid_T" > <zoom_domain id="2n165eT"/> </domain>
+     <domain id="5n165eT" domain_ref="grid_T" > <zoom_domain id="5n165eT"/> </domain>
+     <domain id="8n165eT" domain_ref="grid_T" > <zoom_domain id="8n165eT"/> </domain>
+     <!-- <\!--   180w   -\-> -->
+     <domain id="8s180wT" domain_ref="grid_T" > <zoom_domain id="8s180wT"/> </domain>
+     <domain id="5s180wT" domain_ref="grid_T" > <zoom_domain id="5s180wT"/> </domain>
+     <domain id="2s180wT" domain_ref="grid_T" > <zoom_domain id="2s180wT"/> </domain>
+     <domain id="0n180wT" domain_ref="grid_T" > <zoom_domain id="0n180wT"/> </domain>
+     <domain id="2n180wT" domain_ref="grid_T" > <zoom_domain id="2n180wT"/> </domain>
+     <domain id="5n180wT" domain_ref="grid_T" > <zoom_domain id="5n180wT"/> </domain>
+     <domain id="8n180wT" domain_ref="grid_T" > <zoom_domain id="8n180wT"/> </domain>
+     <!-- <\!--   170w   -\-> -->
+     <domain id="8s170wT" domain_ref="grid_T" > <zoom_domain id="8s170wT"/> </domain>
+     <domain id="5s170wT" domain_ref="grid_T" > <zoom_domain id="5s170wT"/> </domain>
+     <domain id="2s170wT" domain_ref="grid_T" > <zoom_domain id="2s170wT"/> </domain>
+     <domain id="0n170wT" domain_ref="grid_T" > <zoom_domain id="0n170wT"/> </domain>
+     <domain id="2n170wT" domain_ref="grid_T" > <zoom_domain id="2n170wT"/> </domain>
+     <domain id="5n170wT" domain_ref="grid_T" > <zoom_domain id="5n170wT"/> </domain>
+     <domain id="8n170wT" domain_ref="grid_T" > <zoom_domain id="8n170wT"/> </domain>
+     <!-- <\!--   155w   -\-> -->
+     <domain id="8s155wT" domain_ref="grid_T" > <zoom_domain id="8s155wT"/> </domain>
+     <domain id="5s155wT" domain_ref="grid_T" > <zoom_domain id="5s155wT"/> </domain>
+     <domain id="2s155wT" domain_ref="grid_T" > <zoom_domain id="2s155wT"/> </domain>
+     <domain id="0n155wT" domain_ref="grid_T" > <zoom_domain id="0n155wT"/> </domain>
+     <domain id="2n155wT" domain_ref="grid_T" > <zoom_domain id="2n155wT"/> </domain>
+     <domain id="5n155wT" domain_ref="grid_T" > <zoom_domain id="5n155wT"/> </domain>
+     <domain id="8n155wT" domain_ref="grid_T" > <zoom_domain id="8n155wT"/> </domain>
+     <!-- <\!--   140w   -\-> -->
+     <domain id="8s140wT" domain_ref="grid_T" > <zoom_domain id="8s140wT"/> </domain>
+     <domain id="5s140wT" domain_ref="grid_T" > <zoom_domain id="5s140wT"/> </domain>
+     <domain id="2s140wT" domain_ref="grid_T" > <zoom_domain id="2s140wT"/> </domain>
+     <domain id="0n140wT" domain_ref="grid_T" > <zoom_domain id="0n140wT"/> </domain>
+     <domain id="2n140wT" domain_ref="grid_T" > <zoom_domain id="2n140wT"/> </domain>
+     <domain id="5n140wT" domain_ref="grid_T" > <zoom_domain id="5n140wT"/> </domain>
+     <domain id="8n140wT" domain_ref="grid_T" > <zoom_domain id="8n140wT"/> </domain>
+     <!-- <\!--   125w   -\-> -->
+     <domain id="8s125wT" domain_ref="grid_T" > <zoom_domain id="8s125wT"/> </domain>
+     <domain id="5s125wT" domain_ref="grid_T" > <zoom_domain id="5s125wT"/> </domain>
+     <domain id="2s125wT" domain_ref="grid_T" > <zoom_domain id="2s125wT"/> </domain>
+     <domain id="0n125wT" domain_ref="grid_T" > <zoom_domain id="0n125wT"/> </domain>
+     <domain id="2n125wT" domain_ref="grid_T" > <zoom_domain id="2n125wT"/> </domain>
+     <domain id="5n125wT" domain_ref="grid_T" > <zoom_domain id="5n125wT"/> </domain>
+     <domain id="8n125wT" domain_ref="grid_T" > <zoom_domain id="8n125wT"/> </domain>
+     <!-- <\!--   110w   -\-> -->
+     <domain id="8s110wT" domain_ref="grid_T" > <zoom_domain id="8s110wT"/> </domain>
+     <domain id="5s110wT" domain_ref="grid_T" > <zoom_domain id="5s110wT"/> </domain>
+     <domain id="2s110wT" domain_ref="grid_T" > <zoom_domain id="2s110wT"/> </domain>
+     <domain id="0n110wT" domain_ref="grid_T" > <zoom_domain id="0n110wT"/> </domain>
+     <domain id="2n110wT" domain_ref="grid_T" > <zoom_domain id="2n110wT"/> </domain>
+     <domain id="5n110wT" domain_ref="grid_T" > <zoom_domain id="5n110wT"/> </domain>
+     <domain id="8n110wT" domain_ref="grid_T" > <zoom_domain id="8n110wT"/> </domain>
+     <!-- <\!--   95w   -\-> -->
+     <domain id="8s95wT" domain_ref="grid_T" > <zoom_domain id="8s95wT"/> </domain>
+     <domain id="5s95wT" domain_ref="grid_T" > <zoom_domain id="5s95wT"/> </domain>
+     <domain id="2s95wT" domain_ref="grid_T" > <zoom_domain id="2s95wT"/> </domain>
+     <domain id="0n95wT" domain_ref="grid_T" > <zoom_domain id="0n95wT"/> </domain>
+     <domain id="2n95wT" domain_ref="grid_T" > <zoom_domain id="2n95wT"/> </domain>
+     <domain id="5n95wT" domain_ref="grid_T" > <zoom_domain id="5n95wT"/> </domain>
+     <domain id="8n95wT" domain_ref="grid_T" > <zoom_domain id="8n95wT"/> </domain>
+     <!-- <\!--   RAMA   -\-> -->
+     <!-- <\!--   55e   -\-> -->
+     <domain id="16s55eT"    domain_ref="grid_T" > <zoom_domain id="16s55eT"   /> </domain>
+     <domain id="12s55eT"    domain_ref="grid_T" > <zoom_domain id="12s55eT"   /> </domain>
+     <domain id="8s55eT"     domain_ref="grid_T" > <zoom_domain id="8s55eT"    /> </domain>
+     <domain id="4s55eT"     domain_ref="grid_T" > <zoom_domain id="4s55eT"    /> </domain>
+     <domain id="1.5s55eT"   domain_ref="grid_T" > <zoom_domain id="1.5s55eT"  /> </domain>
+     <domain id="0n55eT"     domain_ref="grid_T" > <zoom_domain id="0n55eT"    /> </domain>
+     <domain id="1.5n55eT"   domain_ref="grid_T" > <zoom_domain id="1.5n55eT"  /> </domain>
+     <domain id="4n55eT"     domain_ref="grid_T" > <zoom_domain id="4n55eT"    /> </domain>
+     <!--    <\!--   65e   -\-> -->
+     <domain id="15n65eT"    domain_ref="grid_T" > <zoom_domain id="15n65eT"   /> </domain>
+     <!--    <\!--   67e   -\-> -->
+     <domain id="16s67eT"    domain_ref="grid_T" > <zoom_domain id="16s67eT"   /> </domain>
+     <domain id="12s67eT"    domain_ref="grid_T" > <zoom_domain id="12s67eT"   /> </domain>
+     <domain id="8s67eT"     domain_ref="grid_T" > <zoom_domain id="8s67eT"    /> </domain>
+     <domain id="4s67eT"     domain_ref="grid_T" > <zoom_domain id="4s67eT"    /> </domain>
+     <domain id="1.5s67eT"   domain_ref="grid_T" > <zoom_domain id="1.5s67eT"  /> </domain>
+     <domain id="0n67eT"     domain_ref="grid_T" > <zoom_domain id="0n67eT"    /> </domain>
+     <domain id="1.5n67eT"   domain_ref="grid_T" > <zoom_domain id="1.5n67eT"  /> </domain>
+     <domain id="4n67eT"     domain_ref="grid_T" > <zoom_domain id="4n67eT"    /> </domain>
+     <domain id="8n67eT"     domain_ref="grid_T" > <zoom_domain id="8n67eT"    /> </domain>
+     <!-- <\!--   80.5e   -\-> -->
+     <domain id="16s80.5eT"  domain_ref="grid_T" > <zoom_domain id="16s80.5eT" /> </domain>
+     <domain id="12s80.5eT"  domain_ref="grid_T" > <zoom_domain id="12s80.5eT" /> </domain>
+     <domain id="8s80.5eT"   domain_ref="grid_T" > <zoom_domain id="8s80.5eT"  /> </domain>
+     <domain id="4s80.5eT"   domain_ref="grid_T" > <zoom_domain id="4s80.5eT"  /> </domain>
+     <domain id="1.5s80.5eT" domain_ref="grid_T" > <zoom_domain id="1.5s80.5eT"/> </domain>
+     <domain id="0n80.5eT"   domain_ref="grid_T" > <zoom_domain id="0n80.5eT"  /> </domain>
+     <domain id="1.5n80.5eT" domain_ref="grid_T" > <zoom_domain id="1.5n80.5eT"/> </domain>
+     <domain id="4n80.5eT"   domain_ref="grid_T" > <zoom_domain id="4n80.5eT"  /> </domain>
+     <!-- <\!--   90e   -\-> -->
+     <domain id="1.5s90eT"   domain_ref="grid_T" > <zoom_domain id="1.5s90eT"  /> </domain>
+     <domain id="0n90eT"     domain_ref="grid_T" > <zoom_domain id="0n90eT"    /> </domain>
+     <domain id="1.5n90eT"   domain_ref="grid_T" > <zoom_domain id="1.5n90eT"  /> </domain>
+     <domain id="4n90eT"     domain_ref="grid_T" > <zoom_domain id="4n90eT"    /> </domain>
+     <domain id="8n90eT"     domain_ref="grid_T" > <zoom_domain id="8n90eT"    /> </domain>
+     <domain id="12n90eT"    domain_ref="grid_T" > <zoom_domain id="12n90eT"   /> </domain>
+     <domain id="15n90eT"    domain_ref="grid_T" > <zoom_domain id="15n90eT"   /> </domain>
+     <!-- <\!--   95e   -\-> -->
+     <domain id="16s95eT"    domain_ref="grid_T" > <zoom_domain id="16s95eT"   /> </domain>
+     <domain id="12s95eT"    domain_ref="grid_T" > <zoom_domain id="12s95eT"   /> </domain>
+     <domain id="8s95eT"     domain_ref="grid_T" > <zoom_domain id="8s95eT"    /> </domain>
+     <domain id="5s95eT"     domain_ref="grid_T" > <zoom_domain id="5s95eT"    /> </domain>
+     <!-- <\!--   PIRATA   -\-> -->
+     <!-- <\!--   38w-30w   -\-> -->
+     <domain id="19s34wT" domain_ref="grid_T" > <zoom_domain id="19s34wT"/> </domain>
+     <domain id="14s32wT" domain_ref="grid_T" > <zoom_domain id="14s32wT"/> </domain>
+     <domain id="8s30wT"  domain_ref="grid_T" > <zoom_domain id="8s30wT" /> </domain>
+     <domain id="0n35wT"  domain_ref="grid_T" > <zoom_domain id="0n35wT" /> </domain>
+     <domain id="4n38wT"  domain_ref="grid_T" > <zoom_domain id="4n38wT" /> </domain>
+     <domain id="8n38wT"  domain_ref="grid_T" > <zoom_domain id="8n38wT" /> </domain>
+     <domain id="12n38wT" domain_ref="grid_T" > <zoom_domain id="12n38wT"/> </domain>
+     <domain id="15n38wT" domain_ref="grid_T" > <zoom_domain id="15n38wT"/> </domain>
+     <domain id="20n38wT" domain_ref="grid_T" > <zoom_domain id="20n38wT"/> </domain>
+     <!-- <\!--   23w   -\-> -->
+     <domain id="0n23wT"  domain_ref="grid_T" > <zoom_domain id="0n23wT" /> </domain>
+     <domain id="4n23wT"  domain_ref="grid_T" > <zoom_domain id="4n23wT" /> </domain>
+     <domain id="12n23wT" domain_ref="grid_T" > <zoom_domain id="12n23wT"/> </domain>
+     <domain id="21n23wT" domain_ref="grid_T" > <zoom_domain id="21n23wT"/> </domain>
+     <!-- <\!--   10w   -\-> -->
+     <domain id="10s10wT" domain_ref="grid_T" > <zoom_domain id="10s10wT"/> </domain>
+     <domain id="6s10wT"  domain_ref="grid_T" > <zoom_domain id="6s10wT" /> </domain>
+     <domain id="0n10wT"  domain_ref="grid_T" > <zoom_domain id="0n10wT" /> </domain>
+     <!-- <\!--   0e   -\-> -->
+     <domain id="0n0eT"   domain_ref="grid_T" > <zoom_domain id="0n0eT"  /> </domain>
+
+        <domain id="ARE_CNK18_130" domain_ref="grid_T"> <zoom_domain ibegin="41" jbegin="294" ni="1" nj="1" /> </domain>
+     <domain id="ARE_CNK18_500" domain_ref="grid_T"> <zoom_domain ibegin="44" jbegin="296" ni="1" nj="1" /> </domain>
+     <domain id="ARE_CNK18_2000" domain_ref="grid_T"> <zoom_domain ibegin="64" jbegin="306" ni="1" nj="1" /> </domain>
+     <domain id="ARE_CNK18_3500" domain_ref="grid_T"> <zoom_domain ibegin="124" jbegin="321" ni="1" nj="1" /> </domain>
+     <domain id="LNK_CNK18_3500" domain_ref="grid_T"> <zoom_domain ibegin="156" jbegin="293" ni="1" nj="1" /> </domain>
+     <domain id="LNK_CNK18_130" domain_ref="grid_T"> <zoom_domain ibegin="69" jbegin="232" ni="1" nj="1" /> </domain>
+     <domain id="LNK_CNK18_500" domain_ref="grid_T"> <zoom_domain ibegin="73" jbegin="233" ni="1" nj="1" /> </domain>
+     <domain id="LNK_CNK18_2000" domain_ref="grid_T"> <zoom_domain ibegin="90" jbegin="249" ni="1" nj="1" /> </domain>
+     <domain id="IT1_CNK18_130" domain_ref="grid_T"> <zoom_domain ibegin="113" jbegin="178" ni="1" nj="1" /> </domain>
+     <domain id="IT1_CNK18_800" domain_ref="grid_T"> <zoom_domain ibegin="113" jbegin="182" ni="1" nj="1" /> </domain>
+     <domain id="IT1_CNK18_2000" domain_ref="grid_T"> <zoom_domain ibegin="112" jbegin="197" ni="1" nj="1" /> </domain>
+     <domain id="CTZ_CNK18_2000" domain_ref="grid_T"> <zoom_domain ibegin="144" jbegin="219" ni="1" nj="1" /> </domain>
+     <domain id="CTZ_CNK18_500" domain_ref="grid_T"> <zoom_domain ibegin="128" jbegin="176" ni="1" nj="1" /> </domain>
+     <domain id="CTZ_CNK18_130" domain_ref="grid_T"> <zoom_domain ibegin="131" jbegin="171" ni="1" nj="1" /> </domain>
+     <domain id="IT2_CNK18_1600" domain_ref="grid_T"> <zoom_domain ibegin="169" jbegin="224" ni="1" nj="1" /> </domain>
+     <domain id="HD1_CNK18_3300" domain_ref="grid_T"> <zoom_domain ibegin="414" jbegin="426" ni="1" nj="1" /> </domain>
+     <domain id="HD2_CNK18_3300" domain_ref="grid_T"> <zoom_domain ibegin="420" jbegin="438" ni="1" nj="1" /> </domain>
+     <domain id="HD3_CNK18_3300" domain_ref="grid_T"> <zoom_domain ibegin="402" jbegin="432" ni="1" nj="1" /> </domain>
+     <domain id="CAM_CNK18_130" domain_ref="grid_T"> <zoom_domain ibegin="216" jbegin="253" ni="1" nj="1" /> </domain>
+     <domain id="CAM_CNK18_500" domain_ref="grid_T"> <zoom_domain ibegin="215" jbegin="256" ni="1" nj="1" /> </domain>
+     <domain id="CAM_CNK18_2000" domain_ref="grid_T"> <zoom_domain ibegin="213" jbegin="255" ni="1" nj="1" /> </domain>
+     <domain id="CAP_CNK18_500" domain_ref="grid_T"> <zoom_domain ibegin="211" jbegin="212" ni="1" nj="1" /> </domain>
+     <domain id="IT2_CNK18_130" domain_ref="grid_T"> <zoom_domain ibegin="206" jbegin="194" ni="1" nj="1" /> </domain>
+     <domain id="IT2_CNK18_500" domain_ref="grid_T"> <zoom_domain ibegin="202" jbegin="202" ni="1" nj="1" /> </domain>
+     <domain id="CAP_CNK18_2000" domain_ref="grid_T"> <zoom_domain ibegin="178" jbegin="251" ni="1" nj="1" /> </domain>
+     <domain id="PER_CNK18_130" domain_ref="grid_T"> <zoom_domain ibegin="73" jbegin="440" ni="1" nj="1" /> </domain>
+     <domain id="PER_CNK18_500" domain_ref="grid_T"> <zoom_domain ibegin="78" jbegin="440" ni="1" nj="1" /> </domain>
+     <domain id="PER_CNK18_2000" domain_ref="grid_T"> <zoom_domain ibegin="109" jbegin="432" ni="1" nj="1" /> </domain>
+     <domain id="PER_CNK18_3500" domain_ref="grid_T"> <zoom_domain ibegin="126" jbegin="423" ni="1" nj="1" /> </domain>
+     <domain id="LMP_CNK18_3500" domain_ref="grid_T"> <zoom_domain ibegin="120" jbegin="352" ni="1" nj="1" /> </domain>
+     <domain id="LMP_CNK18_2000" domain_ref="grid_T"> <zoom_domain ibegin="70" jbegin="357" ni="1" nj="1" /> </domain>
+     <domain id="LMP_CNK18_500" domain_ref="grid_T"> <zoom_domain ibegin="48" jbegin="371" ni="1" nj="1" /> </domain>
+     <domain id="LMP_CNK18_130" domain_ref="grid_T"> <zoom_domain ibegin="40" jbegin="366" ni="1" nj="1" /> </domain>
+     <domain id="ARE_CNK18_130" domain_ref="grid_T"> <zoom_domain ibegin="41" jbegin="294" ni="1" nj="1" /> </domain>
+     <domain id="A1" domain_ref="grid_T"> <zoom_domain ibegin="376" jbegin="454" ni="1" nj="1" /> </domain>
+     <domain id="A2" domain_ref="grid_T"> <zoom_domain ibegin="394" jbegin="451" ni="1" nj="1" /> </domain>
+     <domain id="A3" domain_ref="grid_T"> <zoom_domain ibegin="409" jbegin="444" ni="1" nj="1" /> </domain>
+     <domain id="A4" domain_ref="grid_T"> <zoom_domain ibegin="428" jbegin="436" ni="1" nj="1" /> </domain>
+     <domain id="B1" domain_ref="grid_T"> <zoom_domain ibegin="396" jbegin="465" ni="1" nj="1" /> </domain>
+     <domain id="B2" domain_ref="grid_T"> <zoom_domain ibegin="415" jbegin="461" ni="1" nj="1" /> </domain>
+     <domain id="B3" domain_ref="grid_T"> <zoom_domain ibegin="433" jbegin="458" ni="1" nj="1" /> </domain>
+     <domain id="C1" domain_ref="grid_T"> <zoom_domain ibegin="439" jbegin="474" ni="1" nj="1" /> </domain>
+     <domain id="C2" domain_ref="grid_T"> <zoom_domain ibegin="459" jbegin="459" ni="1" nj="1" /> </domain>
+     <domain id="D1" domain_ref="grid_T"> <zoom_domain ibegin="379" jbegin="471" ni="1" nj="1" /> </domain>
+     <domain id="D2" domain_ref="grid_T"> <zoom_domain ibegin="403" jbegin="486" ni="1" nj="1" /> </domain>
+     <domain id="D3" domain_ref="grid_T"> <zoom_domain ibegin="422" jbegin="476" ni="1" nj="1" /> </domain>
+     <domain id="D4" domain_ref="grid_T"> <zoom_domain ibegin="440" jbegin="429" ni="1" nj="1" /> </domain>
+     <domain id="D5" domain_ref="grid_T"> <zoom_domain ibegin="453" jbegin="440" ni="1" nj="1" /> </domain>
+     <domain id="D7" domain_ref="grid_T"> <zoom_domain ibegin="474" jbegin="435" ni="1" nj="1" /> </domain>
+     <domain id="D8" domain_ref="grid_T"> <zoom_domain ibegin="476" jbegin="459" ni="1" nj="1" /> </domain>
+     <domain id="N1" domain_ref="grid_T"> <zoom_domain ibegin="380" jbegin="361" ni="1" nj="1" /> </domain>
+     <domain id="N2" domain_ref="grid_T"> <zoom_domain ibegin="396" jbegin="379" ni="1" nj="1" /> </domain>
+     <domain id="N3" domain_ref="grid_T"> <zoom_domain ibegin="395" jbegin="392" ni="1" nj="1" /> </domain>
+     <domain id="N4" domain_ref="grid_T"> <zoom_domain ibegin="404" jbegin="409" ni="1" nj="1" /> </domain>
+     <domain id="E1" domain_ref="grid_T"> <zoom_domain ibegin="416" jbegin="308" ni="1" nj="1" /> </domain>
+     <domain id="E2" domain_ref="grid_T"> <zoom_domain ibegin="425" jbegin="329" ni="1" nj="1" /> </domain>
+     <domain id="E3" domain_ref="grid_T"> <zoom_domain ibegin="435" jbegin="333" ni="1" nj="1" /> </domain>
+     <domain id="E4" domain_ref="grid_T"> <zoom_domain ibegin="442" jbegin="343" ni="1" nj="1" /> </domain>
+     <domain id="E5" domain_ref="grid_T"> <zoom_domain ibegin="442" jbegin="356" ni="1" nj="1" /> </domain>
+     <domain id="EN" domain_ref="grid_T"> <zoom_domain ibegin="420" jbegin="338" ni="1" nj="1" /> </domain>
+     <domain id="YUC1" domain_ref="grid_T"> <zoom_domain ibegin="422" jbegin="279" ni="1" nj="1" /> </domain>
+     <domain id="YUC2" domain_ref="grid_T"> <zoom_domain ibegin="430" jbegin="284" ni="1" nj="1" /> </domain>
+     <domain id="YUC3" domain_ref="grid_T"> <zoom_domain ibegin="432" jbegin="275" ni="1" nj="1" /> </domain>
+     <domain id="YUC4" domain_ref="grid_T"> <zoom_domain ibegin="436" jbegin="279" ni="1" nj="1" /> </domain>
+     <domain id="YUC5" domain_ref="grid_T"> <zoom_domain ibegin="440" jbegin="277" ni="1" nj="1" /> </domain>
+     <domain id="YUC6" domain_ref="grid_T"> <zoom_domain ibegin="450" jbegin="287" ni="1" nj="1" /> </domain>
+     <domain id="YUC7" domain_ref="grid_T"> <zoom_domain ibegin="462" jbegin="284" ni="1" nj="1" /> </domain>
+     <domain id="YUC8" domain_ref="grid_T"> <zoom_domain ibegin="468" jbegin="283" ni="1" nj="1" /> </domain>
+     <domain id="YUC9" domain_ref="grid_T"> <zoom_domain ibegin="477" jbegin="284" ni="1" nj="1" /> </domain>
+     <domain id="YUC10" domain_ref="grid_T"> <zoom_domain ibegin="484" jbegin="290" ni="1" nj="1" /> </domain>
+     <domain id="EFL1" domain_ref="grid_T"> <zoom_domain ibegin="623" jbegin="348" ni="1" nj="1" /> </domain>
+     <domain id="EFL2" domain_ref="grid_T"> <zoom_domain ibegin="619" jbegin="352" ni="1" nj="1" /> </domain>
+     <domain id="EFL3" domain_ref="grid_T"> <zoom_domain ibegin="620" jbegin="361" ni="1" nj="1" /> </domain>
+     <domain id="EFL4" domain_ref="grid_T"> <zoom_domain ibegin="621" jbegin="364" ni="1" nj="1" /> </domain>
+     <domain id="EFL5" domain_ref="grid_T"> <zoom_domain ibegin="613" jbegin="376" ni="1" nj="1" /> </domain>
+     <domain id="EFL6" domain_ref="grid_T"> <zoom_domain ibegin="612" jbegin="384" ni="1" nj="1" /> </domain>
+     <domain id="EFL7" domain_ref="grid_T"> <zoom_domain ibegin="612" jbegin="393" ni="1" nj="1" /> </domain>
+
+
+
+     <!--   U grid   -->
+     <domain id="grid_U" long_name="grid U"/>
+     <!--   Eq section   -->
+     <domain id="EqU" domain_ref="grid_U" > <zoom_domain id="EqU"/> </domain>
+
+      
+     <!--   V grid   -->
+     <domain id="grid_V" long_name="grid V"/>
+     <!--   Eq section : no V point on the Equator...   -->
+
+     
+     <!--   W grid   -->
+     <domain id="grid_W" long_name="grid W"/>
+     <!--   Eq section   -->
+     <domain id="EqW" domain_ref="grid_W" > <zoom_domain id="EqW"/> </domain>
+
+     
+     <!--   zonal mean grid   -->
+     <domain id="gznl" long_name="gznl"/>
+     <domain id="znl_T" domain_ref="gznl" > <zoom_domain id="znl_T"/> </domain>
+     <domain id="znl_W" domain_ref="gznl" > <zoom_domain id="znl_W"/> </domain>
+
+     
+     <!--   other grids   -->
+     <domain id="scalarpoint" long_name="scalar"/>
+      
+
+   </domain_definition>    
+ 
