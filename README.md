@@ -17,7 +17,7 @@ Hope this helps to another lost soul!
 3. [Create new experiment](https://github.com/ivonnegarciam/blooms/blob/main/models/uncoupled/NEMO/create_new_experiment.md)
 
 ### OASIS
-1. OASIS Install & compile
+1. [OASIS Install & compile](https://github.com/ivonnegarciam/blooms/blob/main/models/uncoupled/OASIS/install_compile_OASIS3-MCT_4.0.md)
 
 ## Coupled models (NOW: NEMO-OASIS-WRF)
 ### XIOS with OASIS
