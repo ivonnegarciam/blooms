@@ -59,7 +59,7 @@ rsync -rv --exclude=nemo /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-
 Modify namelist, if necessary (I think this should be done here/now):
 ```
 cd /EXP00/
-vi namelist_cfg
+vi [namelist_cfg](namelist_cfg)
 ```
 
 Add the configuration name to the list in work_cfgs.txt
