@@ -30,5 +30,5 @@ Hope this helps to another lost soul!
 Coming soon
 
 ## Acknowledgements
-The current compilation of notes and files includes inputs, comments and solutions proposed by several coleagues at CICESE. In particular, I would like to thank Julio Sheinbaum, Julien Jouanno, Favio Medrano and Alejandro Dominguez Pérez for their technical support and guidance. 
+The current compilation of notes and files includes inputs, comments and solutions proposed by several coleagues from CICESE and IRD-LEGOS. In particular, I would like to thank Julien Jouanno, Julio Sheinbaum, Favio Medrano, Alejandro Dominguez Pérez and Marco Larrañaga for their technical support and guidance.
 
