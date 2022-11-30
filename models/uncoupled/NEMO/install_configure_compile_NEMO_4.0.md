@@ -56,10 +56,10 @@ Check that all namelists and other files are copied (except the nemo exe, they a
 rsync -rv --exclude=nemo /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-R01/EXP00/* /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-E02/EXP00/
 ```
 
-Modify namelist, if necessary (I think this should be done here/now):
+Modify [namelist_cfg](namelist_cfg), if necessary (I think this should be done here/now):
 ```
 cd /EXP00/
-vi [namelist_cfg](namelist_cfg)
+vi namelist_cfg
 ```
 
 Add the configuration name to the list in work_cfgs.txt
