@@ -21,6 +21,7 @@ Hope this helps to another lost soul!
 
 ## Coupled models (NOW: NEMO-OASIS-WRF)
 ### XIOS with OASIS
+1. [XIOS compile with OASIS](https://github.com/ivonnegarciam/blooms/tree/main/models/coupled/XIOS_withOASIS)
 
 ### NEMO with OASIS & XIOS
 
