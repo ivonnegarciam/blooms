@@ -3,7 +3,7 @@
 cd /LUSTRE/igarcia/models/NEMO_4.0_uncoupled/cfgs/GOLFO36-E02/EXP00
 ```
 
-Once the cfg is succesfully duplicated, edit: [run_nemo.ksh](run_nemo.ksh), [includefile.ksh](includefile.ksh), [namelist_cfg](namelist_cfg), [save_nemo.ksh](save_nemo.ksh) and [GOLFO36-E01.db](GOLFO36-E01.db)  
+Once the cfg is succesfully duplicated, edit: [run_nemo.ksh](run_nemo.ksh), [includefile.ksh](includefile.ksh), [namelist_cfg](namelist_cfg), [save_nemo.ksh](save_nemo.ksh) and [GOLFO36-E02.db](GOLFO36-E02.db)  
 ```
 vi run_nemo.ksh
 vi includefile.ksh
