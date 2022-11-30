@@ -19,6 +19,9 @@ Hope this helps to another lost soul!
 ### OASIS
 1. [OASIS Install & compile](https://github.com/ivonnegarciam/blooms/blob/main/models/uncoupled/OASIS/install_compile_OASIS3-MCT_4.0.md)
 
+### XIOS without OASIS
+1. XIOS compile without OASIS
+
 ## Coupled models (NOW: NEMO-OASIS-WRF)
 ### XIOS with OASIS
 1. [XIOS compile with OASIS](https://github.com/ivonnegarciam/blooms/tree/main/models/coupled/XIOS_withOASIS)
