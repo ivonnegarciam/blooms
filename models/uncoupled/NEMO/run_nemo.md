@@ -15,7 +15,7 @@ vi GOLFO36-E02.db
 
 Note: if the number of cores is changed, the new value must coincide with the one set on run_nemo.ksh (line 06) and the one in includefile.ksh (lines 42 & 43).
 
-run
+Run:
 ```
 qsub run_nemo.ksh 
 ```
