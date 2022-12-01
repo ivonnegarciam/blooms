@@ -29,6 +29,10 @@ Hope this helps to another lost soul!
 ### NEMO with OASIS & XIOS
 
 ### WRF with OASIS & XIOS
+1. [WRF Install & compile](https://github.com/ivonnegarciam/blooms/blob/main/models/coupled/WRF_withOASIS_withXIOS/install_configure_compile_WRF_4.1.3_withOASIS_withXIOS.md)
+2. WPS Install & compile
+3. Pre-processing
+4. Run
 
 ### NOW (NEMO-OASIS-WRF)
 Coming soon
