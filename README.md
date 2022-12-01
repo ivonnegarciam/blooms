@@ -27,6 +27,7 @@ Hope this helps to another lost soul!
 1. [XIOS compile with OASIS](https://github.com/ivonnegarciam/blooms/tree/main/models/coupled/XIOS_withOASIS/install_compile_XIOS2.5_withoutOASIS.md)
 
 ### NEMO with OASIS & XIOS
+Coming soon
 
 ### WRF with OASIS & XIOS
 1. [WRF Install & compile](https://github.com/ivonnegarciam/blooms/blob/main/models/coupled/WRF_withOASIS_withXIOS/install_configure_compile_WRF_4.1.3_withOASIS_withXIOS.md)
