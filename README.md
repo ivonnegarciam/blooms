@@ -39,5 +39,5 @@ Coming soon
 Coming soon
 
 ## Acknowledgements
-The current compilation of notes and files includes inputs, comments and solutions proposed by several coleagues from CICESE and IRD-LEGOS. In particular, I would like to thank Julien Jouanno, Julio Sheinbaum, Favio Medrano, Alejandro Dominguez Pérez and Marco Larrañaga for their technical support and guidance.
+The current compilation of notes and files includes inputs, comments and solutions proposed by several coleagues from CICESE and IRD-LEGOS. In particular, I would like to thank Julien Jouanno, Julio Sheinbaum, Favio Medrano, Fernando Andrade, Alejandro Dominguez Pérez and Marco Larrañaga for their technical support and guidance.
 
