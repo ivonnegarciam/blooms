@@ -33,7 +33,7 @@ Create [run_wrf.pbs](run_wrf.pbs) file to submit wrf job to queue (done from /LU
 vi run_wrf.pbs
 ```
 
-Run real.exe
+Run wrf.exe
 ```
 qsub run_wrf.pbs 
 ```
