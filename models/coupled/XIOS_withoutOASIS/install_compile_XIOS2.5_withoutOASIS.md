@@ -12,11 +12,11 @@ cd /LUSTRE/igarcia/models/XIOS_2.5_withoutOASIS
 Follow this order:
 (Double check that all these modules are neccessary)
 ```
-load module spack
-load module netcdf-c-4.7.0-intel-18.0.1-vtkbioo
-load module intel/MPI2018
-load module netcdf-fortran-4.4.4-intel-18.0.1-zhe2pvi
-load module jasper-1.900.1-intel-18.0.1-3sxqjot
+module load spack
+module load netcdf-c-4.7.0-intel-18.0.1-vtkbioo
+module load intel/MPI2018
+module load netcdf-fortran-4.4.4-intel-18.0.1-zhe2pvi
+module load jasper-1.900.1-intel-18.0.1-3sxqjot
 ```  
 
 ### Create/modify arch files: 
