@@ -32,6 +32,7 @@ The *.env file specifies where HDF5 and NetCDF4 libraries live. The *.fcm file s
 
 ### Compile
 ```
+cd ../ # go to where the make_xios is located
 ./make_xios --arch X64_CHAMAN2018_spack >& log.compile.chaman   
 ```
 It takes about 30 min. When succesful, several executables (including xios_server.exe) and symbolic links to the three arch files are created in /bin/
